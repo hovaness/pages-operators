@@ -12,6 +12,10 @@ const StyledButton = styled.button`
   font-size: 1.2rem;
   cursor: pointer;
   padding: 8px 10px;
+
+  @media (max-width: 680px) {
+    font-size: 1rem;
+  }
 `;
 
 const rotate = keyframes`
