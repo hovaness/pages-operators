@@ -1,3 +1,18 @@
+1)Задача на рефакторинг. Улучшенный код представлен ниже.
+function getLastIndex(str, achar, bchar){
+    if(str.length === 0) return -1;
+    let aIndex = bIndex = null
+    for(let i = 0; i < str.length; i++){
+        if(str[i] === achar){
+            aIndex = i
+        }
+        if(str[i] === bchar){
+            bIndex = i
+        }
+    }
+    return (aIndex === null && bIndex === null) ? -1 : Math.max(aIndex,bIndex)
+}
+
 2) Web приложение - терминал оплаты мобильного телефона.
 В приложении должен быть главный экран со списком операторов - МТС, Билайн,
 Мегафон. Список должен быть расширяем. По клику на оператора переходить на
