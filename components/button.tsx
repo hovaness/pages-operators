@@ -3,7 +3,7 @@ import styled, { keyframes } from "styled-components";
 const StyledButton = styled.button`
   border: none;
   margin-top: 1.5vh;
-  width: 10vh;
+  width: 100px;
   background-color: #ff6c00;
   border-radius: 0.375rem;
   text-align: center;
@@ -12,6 +12,7 @@ const StyledButton = styled.button`
   font-size: 1.2rem;
   cursor: pointer;
   padding: 8px 10px;
+  box-sizing: border-box;
 
   @media (max-width: 680px) {
     font-size: 1rem;

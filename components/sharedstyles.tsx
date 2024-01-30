@@ -58,8 +58,12 @@ const Description = styled.p`
 const List = styled.ul`
   display: flex;
   flex-direction: row;
-  gap: 5vh;
+  gap: 50px;
   flex-wrap: wrap;
+
+  @media (max-width: 1024px) {
+    gap: 40px;
+  }
 `;
 
 const Form = styled.div`
